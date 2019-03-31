@@ -105,7 +105,7 @@ public class CSWave : MonoBehaviour
         contact = robot.transform.position;
         local_vector = transform.InverseTransformPoint(contact);
 
-        contact.y += 5f;
+        //contact.y += 2f;
 
         new_flock_location.transform.position = contact;
 

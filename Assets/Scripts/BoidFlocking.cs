@@ -48,7 +48,19 @@ public class BoidFlocking : MonoBehaviour
         BoidsController boidController = Controller.GetComponent<BoidsController>();
         Vector3 flockCenter = boidController.flockCenter;
         Vector3 flockVelocity = boidController.flockVelocity;
-        Vector3 follow = chasee.transform.localPosition;
+        Vector3 follow;
+
+        if (CSWave.contact == Vector3.zero)
+        {
+            follow = chasee.transform.localPosition;
+        }
+
+        else
+        {
+            follow = boidController.new_flock_location.transform.position;
+
+        }
+        
 
         flockCenter = flockCenter - transform.localPosition;
         flockVelocity = flockVelocity - GetComponent<Rigidbody>().velocity;

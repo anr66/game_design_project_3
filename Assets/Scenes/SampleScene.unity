@@ -810,10 +810,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mouse: Rotate Camera\nArrow Keys: Move Camera\nScroll Wheel: Zoom Camera\n\nr:
-    reset diver position\nj: jump\n\na: Increase Amplitude\nz: Decrease Amplitude\n\nd:
-    Increase Wavelength\nc: Decrease Wavelength\n\ns: Increase Speed\nx: Decrease
-    Speed \n\n"
+  m_Text: 'Butterflies flap wings
+
+    Use BoidsBox to control the speed, number of boids, and randomness'
 --- !u!222 &803504517
 CanvasRenderer:
   m_ObjectHideFlags: 0
