@@ -9,13 +9,14 @@ public class CSWave : MonoBehaviour
     public static int score_counter = 0;
     public GameObject robot;
     public GameObject water;
+    public GameObject new_flock_location;
 
     float time;
 
     public static float impact_time = 0;
     public static float current_time = 0;
 
-    public static Vector3 contact;
+    public static Vector3 contact = Vector3.zero;
     public static Vector3 local_vector;
 
     // Amplitude
@@ -103,6 +104,13 @@ public class CSWave : MonoBehaviour
         // get the point of impact
         contact = robot.transform.position;
         local_vector = transform.InverseTransformPoint(contact);
+
+        contact.y += 5f;
+
+        new_flock_location.transform.position = contact;
+
+        //Instantiate(new_flock_location, contact, new_flock_location.transform.rotation);
+
 
         //ContactPoint p = collider.contacts[0];
         //local_vector = transform.InverseTransformPoint(p.point);

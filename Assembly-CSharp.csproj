@@ -72,10 +72,12 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Boid.cs" />
+    <Compile Include="Assets\Scripts\BoidFlocking.cs" />
     <Compile Include="Assets\Scripts\BoidsController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\CSWave.cs" />
+    <Compile Include="Assets\Scripts\Reset.cs" />
     <Compile Include="Assets\Scripts\RippleEffect.cs" />
     <Compile Include="Assets\Scripts\Ripples.cs" />
     <Compile Include="Assets\Scripts\RobotController.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Assets\Scripts\WaveGen.cs" />
     <None Include="Assets\PeerPlay\Ripple Water\ReadMe.txt" />
     <None Include="Assets\Ripple.shader" />
+    <None Include="Assets\Butterfly (Animated)\Butterfly (Animated).txt" />
     <None Include="Assets\PeerPlay\Ripple Water\_shaders\RippleWater.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
